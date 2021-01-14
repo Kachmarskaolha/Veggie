@@ -1,168 +1,182 @@
 @mixin reg {
-    font-family: MerriweatherRegular,sans-serif; 
-    font-weight: 400;
+  font-family: MerriweatherRegular, sans-serif;
+  font-weight: 400;
 }
 @mixin ital {
-    font-family: MerriweatherItalic,sans-serif; 
-    font-weight: 400;
+  font-family: MerriweatherItalic, sans-serif;
+  font-weight: 400;
 }
 @mixin Light {
-    font-family: MerriweatherLight,sans-serif; 
-    font-weight: 300;
+  font-family: MerriweatherLight, sans-serif;
+  font-weight: 300;
 }
 @mixin lightItal {
-    font-family: MerriweatherLightItalic,sans-serif; 
-    font-weight: 300;
+  font-family: MerriweatherLightItalic, sans-serif;
+  font-weight: 300;
 }
 @mixin bold {
-    font-family: MerriweatherBold,sans-serif; 
-    font-weight: 700;
+  font-family: MerriweatherBold, sans-serif;
+  font-weight: 700;
 }
-$text-color:#3c3c3c;
-.header{
-height:100vh;
-background-image: url(../img/foodiesfeed_com_decorativ.png);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-padding-top: 3rem;
-min-height: 600px;
+$text-color: #3c3c3c;
+.header {
+  height: 100vh;
+  background-image: url(../img/foodiesfeed_com_decorativ.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 3rem;
+  min-height: 600px;
 }
-.header-mnu{
-    text-align: right;
-    }
+.header-mnu {
+  text-align: right;
+}
+
+.header-mnu li {
+  display: inline-block;
+  border: 0.75px solid transparent;
+  padding: 1rem 1.5rem;
+}
+.header-mnu li:hover {
+  border: 0.75px solid $text-color;
+  transition: all 0.2s;
+}
+.header-mnu a {
+  color: $text-color;
+  @include reg;
+  font-size: 1.12rem;
+  text-decoration: none;
+}
+.header-caption {
+  text-align: center;
+  margin-top: 6rem;
+}
+.header-caption h1::after {
+  content: "";
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  margin-left: -125px;
+  width: 253px;
+  height: 33px;
+  background-image: url("../img/decoration-1.png");
+  background-size: cover;
+}
+
+.header-caption {
+  @include Light;
+  color: $text-color;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.columns {
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+.columns-item-image {
+  text-align: center;
+  height: 80px;
+}
+.columns-item-caption {
+  margin-top: 1rem;
+  text-align: center;
+}
+.columns-item-caption h3 {
+  text-transform: uppercase;
+  color: $text-color;
+  @include bold;
+  font-size: 1.25rem;
+}
+.columns-item-descr {
+  margin-top: 2rem;
+  color: $text-color;
+  @include Light;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.specials {
    
-    .header-mnu li{
-        display: inline-block;
-        border: 0.75px solid transparent;
-        padding: 1rem 1.5rem;
-    }
-    .header-mnu li:hover{
-        border: 0.75px solid $text-color;
-        transition: all .2s;
-    }
-    .header-mnu a{
-        color: $text-color;
-        @include reg;
-        font-size:1.12rem;
-        text-decoration: none;
-    }
-.header-caption{
-    text-align: center;
-    margin-top: 6rem;
+  text-align: center;
 }
-.caption::after{
-    content: '';
-    position:absolute;
-    bottom: -1rem;
-    left: 50%;
-    margin-left:-125px;
-    width: 253px;
-    height: 33px;
-    background-image: url('../img/decoration-1.png');
-    background-size: cover;
-   
+.specials h2 {
+  padding: 5rem;
+  @include Light;
+  color: $text-color;
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 4rem;
 }
-
-.caption{
-    @include Light;
-    color: $text-color;
-    font-size: 2.5rem;
-    padding: 1rem;
+.specials h2::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  margin-left: -125px;
+  width: 253px;
+  height: 33px;
+  background-image: url("../img/decoration-1.png");
+  background-size: cover;
 }
-
-.columns{
-    background-image: url('../img/bg.png');
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-    padding: 1rem;
+.specials-item {
+  background-color: #ebebeb;
+  height: 200px;
+  padding: 1rem 0;
 }
-   .columns-item-image{
-       text-align: center;
-       height: 80px;
-   }
-   .columns-item-caption{
-    margin-top: 1rem;
-    text-align: center;
-   
+.specials-item h3 {
+  @include bold;
+  font-size: 1.25rem;
+  color: $text-color;
 }
-.columns-item-caption h3{
-    text-transform: uppercase;
-    color:$text-color;
-    @include bold;
-    font-size: 1.25rem;
-}
-.columns-item-descr{
-    margin-top: 2rem;
-    color:$text-color;
-    @include Light;
-    font-size: 1.25rem;
-    text-align: center;
+.specials-item h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 9.2rem;
+  margin-left: -44px;
+  width: 88px;
+  height: 1px;
+  background-color: #3c3c3c;
 }
 
-
-.specials{
-    text-align: center;
+.descr {
+  @include Light;
+  font-size: 1rem;
+  color: $text-color;
+  padding-top: 12px;
 }
-.specials h2{
-    padding: 5rem;
-    @include Light;
-    color: $text-color;
-    font-size: 2.5rem;
+.price {
+  @include bold;
+  font-size: 1.25rem;
+  color: $text-color;
 }
-
-.specials-item{
-    background-color:#ebebeb;
-    height: 200px;
-    padding: 1rem 0;
+.item-img-1,
+.item-img-2,
+.item-img-3,
+.item-img-4,
+.item-img-5,
+.item-img-6 {
+  background-image: url("../img/picjumbo3_com_hnck8693.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.specials-item h3{
-@include bold;
-font-size: 1.25rem;
-color: $text-color;
-
-} 
-.specials-item h3::after{
-    content: '';
-    position:absolute; 
-    left: 50%;
-    bottom: 9.2rem;
-    margin-left:-44px;
-    width: 88px;
-    height: 1px;
-    background-color: #3c3c3c
+.item-img-2 {
+  background-image: url("../img/picjumbo12_com_hnck8693_c.jpg");
 }
-
-
-
-.descr{
-@include Light;
-font-size: 1rem;
-color: $text-color;
-padding-top: 12px;
+.item-img-3 {
+  background-image: url("../img/picjumbo11_com_hnck8693_c.jpg");
 }
-.price{
-    @include bold;
-    font-size: 1.25rem;
-    color: $text-color;  
+.item-img-4 {
+  background-image: url("../img/picjumbo111_com_hnck8693_.jpg");
 }
-.item-img-1{
-    background-image: url('../img/picjumbo3_com_hnck8693.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center ;
+.item-img-5 {
+  background-image: url("../img/picjumbo121_com_hnck8693_.jpg");
 }
-.item-img-2{
-    background-image: url('../img/picjumbo12_com_hnck8693_c.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center ; 
+.item-img-6 {
+  background-image: url("../img/picjumbo31_com_hnck8693_c.jpg");
 }
-.item-img-3{
-    background-image: url('../img/picjumbo11_com_hnck8693_c.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center ; 
-}
-
