@@ -8,6 +8,8 @@
     "type": "git",
     "url": "git://github.com/itchief/gulp-project-bootstrap-4.git"
   },
+  
+ 
   "dependencies": {
     "jquery": "^3.4.1",
     "popper.js": "^1.14.7",
@@ -30,4 +32,6 @@
     "imagemin-pngquant": "^8.0.0",
     "gulp-rename": "^1.4.0"
   }
+
 }
+
