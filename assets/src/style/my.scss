@@ -283,3 +283,38 @@ margin-top: -3rem;
 .tab-pane.active{
   border: 0.75px solid transparent;
 }
+.footer{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/photo1_copy.png');
+  padding-bottom: 300px;
+}
+.footer{
+  font-size:1.25rem ;
+  @include Light;
+   color: $text-color; 
+}
+.footer h2{
+  position: relative;
+  text-align: center;
+  @include Light;
+  color: $text-color;
+  font-size: 2.5rem;
+  padding: 3rem;
+  padding-bottom: 3rem;
+}
+footer h2::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    margin-left: -125px;
+    width: 253px;
+    height: 33px;
+    background-image: url("../img/decoration-1.png");
+    background-size: cover;
+  }
+.contacts h3,p{
+  margin: 0;
+}
