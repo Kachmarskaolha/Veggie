@@ -28,16 +28,13 @@ $text-color: #3c3c3c;
   padding-top: 3rem;
   min-height: 600px;
 }
-.header-mnu {
-  text-align: right;
-}
 
 .header-mnu li {
   display: inline-block;
   border: 0.75px solid transparent;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
 }
-.header-mnu li:hover {
+.active{
   border: 0.75px solid $text-color;
   transition: all 0.2s;
 }
@@ -243,6 +240,46 @@ margin-top: -3rem;
     background-image: url("../img/decoration-1.png");
     background-size: cover; 
 }
-.tab-mnu{
- text-align: center;
+.one{
+  float: left;
+  @include Light;
+  font-size: 1.10rem;
+  color: $text-color;
+  text-transform: uppercase;
+  
+}
+.two{
+  float: right;
+  position: relative;
+  z-index: 5;
+  display: block;
+  overflow: hidden;
+  @include Light;
+  font-size: 1.10rem;
+  color: $text-color;
+}
+.name{
+  margin: 0;
+}
+.name::after{
+
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  content: '................................................................................................................';
+}
+.starters-item{
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+.subname{
+  margin: 0;
+  float: left;
+  font-style: italic;
+  font-size:1rem ;
+  @include Light;
+   color: $text-color;
+}
+.tab-pane.active{
+  border: 0.75px solid transparent;
 }
