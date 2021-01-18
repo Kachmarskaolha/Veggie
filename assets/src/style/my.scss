@@ -34,11 +34,14 @@ $text-color: #3c3c3c;
   border: 0.75px solid transparent;
   padding: 1rem 1rem;
 }
-.active{
+// .active{
+//   border: 0.75px solid $text-color;
+//   transition: all 0.2s;
+// }
+.header-mnu a:hover{
   border: 0.75px solid $text-color;
-  transition: all 0.2s;
+  transition: 0.3s;
 }
-
 .header-mnu a {
   color: $text-color;
   @include reg;
