@@ -288,10 +288,11 @@ margin-top: -3rem;
   background-size: cover;
   background-position: center;
   background-image: url('../img/photo1_copy.png');
-  padding-bottom: 300px;
+  background-position: -50px 0;
+  
 }
 .footer{
-  font-size:1.25rem ;
+  font-size:1rem ;
   @include Light;
    color: $text-color; 
 }
@@ -302,7 +303,7 @@ margin-top: -3rem;
   color: $text-color;
   font-size: 2.5rem;
   padding: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
 footer h2::after {
     content: "";
@@ -314,7 +315,105 @@ footer h2::after {
     height: 33px;
     background-image: url("../img/decoration-1.png");
     background-size: cover;
+   
+  }
+  .contacts{
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 4rem;
   }
 .contacts h3,p{
   margin: 0;
+ 
+}
+.footer h3{
+font-size: 1.25rem;
+@include Light;
+color: $text-color;
+text-transform: uppercase;
+margin-bottom: 0.5rem;
+margin:0.5rem;
+
+}
+.form{
+  padding-left: 4rem;
+}
+.form input, textarea{
+ width: 43%;
+  margin: 2.3%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $text-color;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+@include reg;
+color: $text-color;
+font-style: italic;
+
+}
+textarea{
+  width: 93%;
+}
+:focus::placeholder{
+  color:transparent;
+  transition: .3s;
+
+}
+:focus{
+  outline: none;
+}
+
+button{
+  border: none;
+  border: 1px solid $text-color;
+  background-color: transparent;
+  font-size: 1rem;
+  @include reg;
+  padding: 0.5rem 1rem;
+
+ 
+  
+}
+button:hover{
+  background-color: $text-color;
+  color: #fff;
+  transition: .3s;
+}
+.footer-bottom{
+  margin-top: 15rem;
+@include reg;
+color: $text-color;
+font-size: 1.25rem;
+text-align: center;
+
+}
+.footer-bottom_nav{
+  float: right;
+}
+.footer-bottom_nav ul{
+  list-style-type: none;
+}
+.footer-bottom_nav li,.center{
+  display: inline-block;
+}
+.footer-bottom_nav a{
+  border: 1px solid $text-color;
+
+}
+.footer-bottom_nav a:hover{
+  background-color: $text-color;
+  transition: .3s;
+ 
+}
+.footer-bottom_nav img:hover{
+  filter:brightness(5000%);
+  transition: .3s;
+}
+
+.facebook{
+  padding: 0.5rem 1rem;
+  
+}
+.instagram{
+padding: 0.5rem 0.5rem;
 }
