@@ -8,27 +8,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="header-mnu">
-              <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Specials</a>
-                </li>
-                <li class="nav-item">
+            <nav class="navbar navbar-expand-lg navbar-light header-mnu float-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">Specials </a>
                   <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
+                  <a class="nav-link" href="#" tabindex="-1">Contact</a>
+                </div>
+              </div>
+            </nav>
+
           </div>
         </div>
         <div class="row">
@@ -47,7 +41,7 @@
     <section class="columns">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="columns-item">
               <div class="columns-item-image">
                 <img src="./img/yelloy1.png" alt="" />
@@ -61,7 +55,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="columns-item">
               <div class="columns-item-image">
                 <img src="./img/tea-yelloy2.png" alt="" />
@@ -73,7 +67,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="columns-item">
               <div class="columns-item-image">
                 <img src="./img/sweet-yelloy3.png" alt="" />
@@ -94,12 +88,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <div class="row item-img-1">
-              <div class="specials-item"></div>
+            <div class="d-inline ">
+              <div class="specials-item item-img-1"></div>
             </div>
           </div>
           <div class="col-md-2">
-            <div class="row">
+            <div class="d-inline">
               <div class="specials-item">
                 <h3>Greens fava</h3>
                 <p class="descr">
@@ -110,12 +104,12 @@
             </div>
           </div>
           <div class="col-md-2">
-            <div class="row item-img-2">
-              <div class="specials-item"></div>
+            <div class="d-inline">
+              <div class="specials-item  item-img-2"></div>
             </div>
           </div>
           <div class="col-md-2">
-            <div class="row">
+            <div class="d-inline">
               <div class="specials-item">
                 <h3>Celery quandong</h3>
                 <p class="descr">
@@ -126,12 +120,12 @@
             </div>
           </div>
           <div class="col-md-2">
-            <div class="row item-img-3">
-              <div class="specials-item"></div>
+            <div class="d-inline ">
+              <div class="specials-item item-img-3"></div>
             </div>
           </div>
           <div class="col-md-2">
-            <div class="row">
+            <div class="d-inline">
               <div class="specials-item">
                 <h3>Pea horseradish</h3>
                 <p class="descr">
@@ -144,7 +138,7 @@
         </div>
         <div class="row">
           <div class="col-md-2">
-            <div class="row">
+            <div class="d-inline">
               <div class="specials-item">
                 <h3>Greens fava</h3>
                 <p class="descr">
@@ -155,13 +149,13 @@
             </div>
           </div>
           <div class="col-md-2">
-            <div class="row item-img-4">
-              <div class="specials-item"></div>
+            <div class="d-inline ">
+              <div class="specials-item item-img-4"></div>
             </div>
           </div>
 
           <div class="col-md-2">
-            <div class="row">
+            <div class="d-inline">
               <div class="specials-item">
                 <h3>Tigernut</h3>
                 <p class="descr">
@@ -172,13 +166,13 @@
             </div>
           </div>
           <div class="col-md-2">
-            <div class="row item-img-5">
-              <div class="specials-item"></div>
+            <div class="d-inline">
+              <div class="specials-item item-img-5"></div>
             </div>
           </div>
 
           <div class="col-md-2">
-            <div class="row">
+            <div class="d-inline">
               <div class="specials-item">
                 <h3>Yarrow sweet</h3>
                 <p class="descr">
@@ -189,8 +183,8 @@
             </div>
           </div>
           <div class="col-md-2">
-            <div class="row item-img-6">
-              <div class="specials-item"></div>
+            <div class="d-inline">
+              <div class="specials-item  item-img-6"></div>
             </div>
           </div>
         </div>
@@ -225,6 +219,9 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="header-mnu nav mb-3" id="pills-tab" role="tablist">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
               <li class="nav-item" role="presentation">
                 <a
                   class="nav-link"
@@ -417,7 +414,7 @@
                   <div class="starters-item">
                     <p class="name">
                       <span class="one">SMOKED RICOTTA TERRINE </span
-                      ><span class="two">12$</span>
+                      ><span class="two">16$</span>
                       <p class="subname">ricotta, shallots, cheddar, capers</p> 
                     </p>
                   </div>

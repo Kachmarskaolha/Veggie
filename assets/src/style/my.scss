@@ -29,15 +29,6 @@ $text-color: #3c3c3c;
   min-height: 600px;
 }
 
-.header-mnu li {
-  display: inline-block;
-  border: 0.75px solid transparent;
-  padding: 1rem 1rem;
-}
-// .active{
-//   border: 0.75px solid $text-color;
-//   transition: all 0.2s;
-// }
 .header-mnu a:hover{
   border: 0.75px solid $text-color;
   transition: 0.3s;
@@ -47,10 +38,15 @@ $text-color: #3c3c3c;
   @include reg;
   font-size: 1.12rem;
   text-decoration: none;
+  border: 0.75px solid transparent;
+  padding: 1rem 1rem;
+  display: inline-block;
+  
 }
 .header-caption {
   text-align: center;
   margin-top: 6rem;
+  position: relative;
 }
 .header-caption h1::after {
   content: "";
@@ -70,7 +66,9 @@ $text-color: #3c3c3c;
   font-size: 2.5rem;
   padding: 1rem;
 }
-
+.container .col-md-2 ,.col-lg-2{
+padding:0;
+}
 .columns {
   background-image: url("../img/bg.png");
   background-size: cover;
@@ -111,6 +109,7 @@ $text-color: #3c3c3c;
   font-size: 2.5rem;
   position: relative;
   margin-bottom: 4rem;
+  position: relative;
 }
 .specials h2::after {
   content: "";
@@ -127,17 +126,19 @@ $text-color: #3c3c3c;
   background-color: #ebebeb;
   height: 200px;
   padding: 1rem 0;
+ 
 }
 .specials-item h3 {
   @include bold;
   font-size: 1.25rem;
   color: $text-color;
+  position: relative;
 }
 .specials-item h3::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 9.2rem;
+  bottom: -1.2rem;
   margin-left: -44px;
   width: 88px;
   height: 1px;
@@ -234,7 +235,7 @@ margin-top: -3rem;
 }
 .menu h2::after{
     content: "";
-    position: absolute;
+    // position: absolute;
    top: 9rem;
     left: 50%;
     margin-left: -125px;
@@ -419,4 +420,30 @@ text-align: center;
 }
 .instagram{
 padding: 0.5rem 0.5rem;
+}
+
+
+@media screen and (max-width: 375px) {
+ html{
+   font-size: 8px;
+ }
+ .header-mnu{
+ float: right;
+}
+.header{
+  background-size: auto;
+}
+.columns-item{
+  margin-top: 5rem;
+}
+.specials{
+  padding: 0 5%;
+
+}
+.about img{
+  margin-top: 4rem;
+}
+.about p{
+  margin-top: 3rem;
+}
 }
