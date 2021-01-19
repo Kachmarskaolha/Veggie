@@ -109,7 +109,7 @@ padding:0;
   font-size: 2.5rem;
   position: relative;
   margin-bottom: 4rem;
-  position: relative;
+  
 }
 .specials h2::after {
   content: "";
@@ -235,7 +235,7 @@ margin-top: -3rem;
 }
 .menu h2::after{
     content: "";
-    // position: absolute;
+    position: absolute;
    top: 9rem;
     left: 50%;
     margin-left: -125px;
@@ -284,6 +284,10 @@ margin-top: -3rem;
   @include Light;
    color: $text-color;
 }
+.menu a{
+  margin: 0;
+  padding: 0.2rem 0.2rem;
+}
 .tab-pane.active{
   border: 0.75px solid transparent;
 }
@@ -292,7 +296,7 @@ margin-top: -3rem;
   background-size: cover;
   background-position: center;
   background-image: url('../img/photo1_copy.png');
-  background-position: -50px 0;
+  // background-position: -50px 0;
   
 }
 .footer{
@@ -423,13 +427,11 @@ padding: 0.5rem 0.5rem;
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
  html{
-   font-size: 8px;
+   font-size: 9px;
  }
- .header-mnu{
- float: right;
-}
+
 .header{
   background-size: auto;
 }
@@ -445,5 +447,90 @@ padding: 0.5rem 0.5rem;
 }
 .about p{
   margin-top: 3rem;
+}
+
+.footer{
+background-size: auto;
+// background-position: -100px;
+text-align: center;
+}
+.contacts{
+  text-align: center;
+  
+}
+.contacts h3{
+  font-size: 2rem;
+}
+.contacts p{
+  font-size: 1.5rem;
+}
+.form h3{
+  @include bold;
+}
+.form input,textarea{
+  width: 100%;
+  margin: 0;
+}
+}
+@media(min-width: 376px) and (max-width: 576px){
+  html{
+    font-size: 10px;
+  }
+
+ .header{
+   background-size: auto;
+ }
+ .columns-item{
+   margin-top: 5rem;
+ }
+ .specials{
+   padding: 0 5%;
+ 
+ }
+ .about img{
+   margin-top: 4rem;
+ }
+ .about p{
+   margin-top: 3rem;
+ }
+ 
+ .footer{
+ background-size: auto;
+ background-position: -100px;
+ text-align: center;
+ }
+ .contacts{
+   text-align: center;
+   
+ }
+ .contacts h3{
+   font-size: 2rem;
+ }
+ .contacts p{
+   font-size: 1.5rem;
+ }
+ .form h3{
+   @include bold;
+ }
+ .form input,textarea{
+   width: 100%;
+   margin: 0;
+ }
+}
+@media(min-width: 576px) and (max-width: 768px){
+  .footer{
+    background-size: auto;
+    background-position: -50px;
+    text-align: center;
+    }
+    .footer h2{
+      margin-top: 150px;
+    }
+    .footer-bottom{
+      margin-top: 2rem;
+    }
+.contacts{
+  padding: 0 2%;
+  margin: 1rem;
 }
 }
