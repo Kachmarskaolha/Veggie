@@ -4,7 +4,7 @@
     //= template/head.html
   </head>
   <body>
-    <header class="header">
+    <header class="header" id='home'>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -14,11 +14,11 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
-                  <a class="nav-link" href="#">Specials </a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Menu</a>
-                  <a class="nav-link" href="#" tabindex="-1">Contact</a>
+                  <a class="nav-link " href="#home">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#specials">Specials </a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#menu">Menu</a>
+                  <a class="nav-link" href="#contact" tabindex="-1">Contact</a>
                 </div>
               </div>
             </nav>
@@ -82,7 +82,7 @@
         </div>
       </div>
     </section>
-    <section class="specials">
+    <section class="specials" id="specials">
       <h2>This month specials</h2>
 
       <div class="container">
@@ -190,7 +190,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -213,7 +213,7 @@
         </div>
       </div>
     </section>
-    <section class="menu">
+    <section class="menu" id="menu">
       <h2>Menu</h2>
       <div class="container">
         <div class="row">
@@ -877,7 +877,7 @@
         </div>
       </div>
     </section>
-<footer class="footer">
+<footer class="footer" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -903,12 +903,13 @@
       </div>
         
           
-          <form action="" class="form mx-auto">
+          <form class="form mx-auto" id="contactForm" method="post">
             <h3>Contact Form</h3>
-    <input type="text" class="inpet-name" name="name" placeholder="Name">
-    <input type="email" class="input-email" name="email" placeholder="Email">
-    <textarea name="Message" id="" class="input-msg" placeholder="Message"></textarea>
-    <button type="submit" class="contacts-btn d-block mx-auto">Send</button>
+    <input type="text" class="name" name="name" placeholder="Name"  id="name">
+    <input type="email" class="email" name="email" placeholder="Email"  id="email">
+    <textarea          class="message" name="Message" placeholder="Message" id="massage"></textarea>
+    <button type="submit" class=" contacts-btn d-block mx-auto" name="send" class="send" value="send">Send</button>
+    <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
           </form>
         
       </div> 
