@@ -36,11 +36,12 @@ $text-color: #3c3c3c;
 .header-mnu a {
   color: $text-color;
   @include reg;
-  font-size: 1.12rem;
+  font-size: 1.25rem;
   text-decoration: none;
   border: 0.75px solid transparent;
   padding: 1rem 1rem;
   display: inline-block;
+  margin:1rem;
   
 }
 .header-caption {
@@ -233,6 +234,18 @@ margin-top: -3rem;
   padding: 5rem;
 
 }
+.header-mnu li{
+  color: $text-color;
+  @include reg;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border: 0.75px solid transparent;
+  padding: 1rem 1rem;
+  display: inline-block;
+  margin:1rem;
+ 
+  
+}
 .menu h2::after{
     content: "";
     position: absolute;
@@ -284,6 +297,7 @@ margin-top: -3rem;
   @include Light;
    color: $text-color;
 }
+
 .menu a{
   margin: 0;
   padding: 0.2rem 0.2rem;
@@ -448,10 +462,13 @@ padding: 0.5rem 0.5rem;
 .about p{
   margin-top: 3rem;
 }
-
+.menu li{
+  margin: 0;
+  padding: 0;
+}
 .footer{
 background-size: auto;
-// background-position: -100px;
+
 text-align: center;
 }
 .contacts{
@@ -493,7 +510,9 @@ text-align: center;
  .about p{
    margin-top: 3rem;
  }
- 
+ .menu li{
+   margin: 0;
+ }
  .footer{
  background-size: auto;
  background-position: -100px;
@@ -518,6 +537,9 @@ text-align: center;
  }
 }
 @media(min-width: 576px) and (max-width: 768px){
+  html{
+    font-size: 10px;
+  }
   .footer{
     background-size: auto;
     background-position: -50px;
