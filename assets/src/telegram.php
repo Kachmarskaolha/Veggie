@@ -3,6 +3,7 @@
 
 $name = $_POST["name"];
 $email = $_POST["email"];
+$message=$_POST["message"];
 $token = '1467266061:AAHC0jrW-M_ywnLWR2Q1qHzb8tVOoAI3b14';
 $chat_id = '-423616188';
 $arr=array (
